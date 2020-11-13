@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<updates>
+    <update>
+        <name>NPEU: mod_svg</name>
+        <description>Joomla! mod_svg module</description>
+        <element>mod_svg</element>
+        <type>module</type>
+        <version>1.0.0</version>
+        <client>site</client>
+        <infourl title="NPEU: mod_svg">https://github.com/NPEU/mod_svg/releases/tag/v1.0.0</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/NPEU/mod_svg/archive/v1.0.0.zip</downloadurl>
+        </downloads>
+        <targetplatform name="joomla" />
+        <tags>
+            <tag>stable</tag>
+        </tags>
+    </update>
+</updates>
