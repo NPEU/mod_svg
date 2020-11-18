@@ -12,7 +12,8 @@ defined('_JEXEC') or die;
 // Include the svg functions only once
 JLoader::register('ModSvgHelper', __DIR__ . '/helper.php');
 
-#$thing = trim($params->get('thing'));
+$svg    = trim($params->get('svg'));
+$border = $params->get('border');
 
 #$moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
 

@@ -38,14 +38,27 @@
                     class="alert alert-info"
                 />
                 <field
-                    name="markup"
+                    name="svg"
                     type="editor"
-                    label="MOD_SVG_MARKUP_LABEL"
-                    description="MOD_SVG_MARKUP_DESC"
+                    label="MOD_SVG_SVG_LABEL"
+                    description="MOD_SVG_SVG_DESC"
                     default=""
                     required="true"
                     editor="codemirror"
+                    filter="raw"
                 />
+                <field
+                    name="border"
+                    type="radio"
+                    label="MOD_SVG_BORDER_LABEL"
+                    description="MOD_SVG_BORDER_DESC"
+                    class="btn-group btn-group-yesno"
+                    default="0"
+                    filter="integer"
+                    >
+                        <option value="1">JYES</option>
+                        <option value="0">JNO</option>
+                    </field>
                 <field
                     name="help"
                     type="note"
