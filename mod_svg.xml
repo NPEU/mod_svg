@@ -10,13 +10,13 @@
     <license>MIT License; see LICENSE.md</license>
 
     <!--  The version string is recorded in the components table -->
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <!-- The description is optional and defaults to the name -->
     <description>MOD_SVG_XML_DESCRIPTION</description>
 
     <updateservers>
         <!-- Note: No spaces or linebreaks allowed between the server tags -->
-        <server type="extension" name="NPEU: mod_svg Update Site">https://raw.githubusercontent.com/NPEU/mod_svg/master/update-manifest.xml</server>
+        <server type="extension" name="NPEU: mod_svg Update Site">https://raw.githubusercontent.com/NPEU/mod_svg/main/update-manifest.xml</server>
     </updateservers>
 
     <files>
