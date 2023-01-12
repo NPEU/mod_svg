@@ -28,25 +28,25 @@
     </files>
 
     <config>
-        <fields name="params">
-            <fieldset name="basic">
-                <field
-                    name="details"
-                    type="note"
-                    label="MOD_SVG_DETAILS_LABEL"
-                    description="MOD_SVG_DETAILS_DESC"
-                    class="alert alert-info"
-                />
-                <field
-                    name="svg"
-                    type="editor"
-                    label="MOD_SVG_SVG_LABEL"
-                    description="MOD_SVG_SVG_DESC"
-                    default=""
-                    required="true"
-                    editor="codemirror"
-                    filter="raw"
-                />
+        <fieldset name="basic">
+            <field
+                name="details"
+                type="note"
+                label="MOD_SVG_DETAILS_LABEL"
+                description="MOD_SVG_DETAILS_DESC"
+                class="alert alert-info"
+            />
+            <field
+                name="content"
+                type="editor"
+                label="MOD_SVG_SVG_LABEL"
+                description="MOD_SVG_SVG_DESC"
+                default=""
+                required="true"
+                editor="codemirror"
+                filter="raw"
+            />
+            <fields name="params">
                 <field
                     name="border"
                     type="radio"
@@ -66,19 +66,19 @@
                     description="MOD_SVG_HELP_DESC"
                     class="alert alert-info"
                 />
-            </fieldset>
+            </fields>
+        </fieldset>
 
-			<fieldset name="advanced">
-
-				<field
-					name="layout"
-					type="modulelayout"
-					label="JFIELD_ALT_LAYOUT_LABEL"
-					description="JFIELD_ALT_MODULE_LAYOUT_DESC"
-				/>
-
-			</fieldset>
-        </fields>
+        <fieldset name="advanced">
+            <fields name="params">
+                <field
+                    name="layout"
+                    type="modulelayout"
+                    label="JFIELD_ALT_LAYOUT_LABEL"
+                    description="JFIELD_ALT_MODULE_LAYOUT_DESC"
+                />
+            </fields>
+        </fieldset>
     </config>
 
 </extension>

@@ -18,5 +18,5 @@ $doc = JFactory::getDocument();
 <<?php echo $params->get('header_tag'); ?>><?php echo $module->title; ?></<?php echo $params->get('header_tag'); ?>>
 <?php endif; ?>
 <figure<?php if ($border) : ?> class="d-bands  t-neutral"<?php endif; ?>">
-    <?php echo $svg; ?>
+    <?php echo $module->content; ?>
 </figure>
