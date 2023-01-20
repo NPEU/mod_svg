@@ -14,4 +14,4 @@ $doc = JFactory::getDocument();
 $data_svg = base64_encode($module->content);
 
 ?>
-<img src="data:image/svg+xml;base64,<?php echo $data_svg; ?>" alt="">
+<img src="data:image/svg+xml;base64,<?php echo $data_svg; ?>" alt="" width="500">
