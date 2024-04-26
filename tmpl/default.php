@@ -3,14 +3,11 @@
  * @package     Joomla.Site
  * @subpackage  mod_svg
  *
- * @copyright   Copyright (C) NPEU 2020.
+ * @copyright   Copyright (C) NPEU 2024.
  * @license     MIT License; see LICENSE.md
  */
 
 defined('_JEXEC') or die;
-
-
-$doc = JFactory::getDocument();
 
 ?>
 
