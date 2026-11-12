@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" client="site" method="upgrade">
 
+    <customContent />
+
     <name>MOD_SVG</name>
     <author>Andy Kirk</author>
     <authorEmail>andy.kirk@npeu.ox.ac.uk</authorEmail>
@@ -37,6 +39,12 @@
                 description="MOD_SVG_DETAILS_DESC"
                 class="alert alert-info"
             />
+            <!--
+                Joomla fixed a "bug" that now prevents this sort of content field definition.
+                It's actually added by Joomla in a convoluted way so we need to use the
+                <customContent />
+                tag above. It's customised in the AdminAdjust pluing to change the editor and
+                accept `raw` content etc.
             <field
                 name="content"
                 type="editor"
@@ -46,8 +54,15 @@
                 required="true"
                 editor="codemirror"
                 filter="raw"
-            />
+            />-->
             <fields name="params">
+                <field
+                    name="help"
+                    type="note"
+                    label="MOD_SVG_HELP_LABEL"
+                    description="MOD_SVG_HELP_DESC"
+                    class="alert alert-info"
+                />
                 <field
                     name="border"
                     type="radio"
@@ -56,17 +71,11 @@
                     class="btn-group btn-group-yesno"
                     default="0"
                     filter="integer"
-                    >
-                        <option value="1">JYES</option>
-                        <option value="0">JNO</option>
-                    </field>
-                <field
-                    name="help"
-                    type="note"
-                    label="MOD_SVG_HELP_LABEL"
-                    description="MOD_SVG_HELP_DESC"
-                    class="alert alert-info"
-                />
+                >
+                    <option value="1">JYES</option>
+                    <option value="0">JNO</option>
+                </field>
+
             </fields>
         </fieldset>
 
